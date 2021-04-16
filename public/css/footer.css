@@ -1,0 +1,42 @@
+/*CSS styles for footer*/
+.footer {
+  background-color: #303030;
+}
+
+.footer-element {
+  border-top: 50px solid transparent;
+  margin-top: 100px;
+}
+
+.footer-element h3,
+.footer-element a, 
+.footer-element p {
+  color: white;
+}
+
+.footer-element h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+footer i {
+  size: 5x;
+  padding: 20px;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: white;
+}
+
+i:hover {
+  opacity: 0.8;
+}
+
+.footer-copyright {
+  font-size: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

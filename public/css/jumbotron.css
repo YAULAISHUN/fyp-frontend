@@ -1,0 +1,74 @@
+/*CSS styles for jumbotron*/
+.jumbotron {
+  background-image: url('../images/jumbotron-bg.jpg');
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 50px;
+  height: 100vh;
+}
+
+.grey-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.vertical-center {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding-top: 220px;
+}
+
+.fa-angle-down {
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jumbotron-title {
+  font-weight: bold;
+  font-size: 50px;
+  opacity: 0.8;
+}
+
+.try-demo-button {
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    line-height:  40px;
+    border:  2px solid white;
+    display:  inline-block;
+    float:  none;
+    text-align:  center;
+    font-size:  14px;
+    color:  #fff;
+    border-radius: 25px;
+    padding: 1px 10px
+}
+
+.try-demo-button:hover  {
+  color:  #fff;
+  background:  rgba(255, 255, 255, 0.2);
+}

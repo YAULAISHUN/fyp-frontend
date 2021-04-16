@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <!-- Custom CSS for this website -->
+    <link href="css/loader.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/3c0642e8eb.js" crossorigin="anonymous"></script>
+
+    <!-- AOS CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    
+    <!-- Boostrap JS CDN-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- AOS Scripts CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="./scripts/index.js"></script>
+
+    <title>A Smart Email Client to help user Identify Malicious URLs</title>
+</head>
+    
+<body style="font-family: Helvetica, Arial, sans-serif;">
+    <!-- Page Loader -->
+    <div class="d-flex justify-content-center" id="loader">
+            <!-- <div class="logo-image">
+                <img src="./images/infiniteLoop-logo.png" style="width: 50%; height: 50%; margin: auto;">
+            </div> -->
+            <div class="loading-icon">             
+                <div class="spinner-border" style="width: 3rem; height: 3rem; margin:auto" role="status"> 
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+    </div>
+    
+    <div class="grey-cover" id="grey-cover"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg-custom fixed-top">
+        <div class="container" id="navbar">
+            <a class="navbar-brand" href="#grey-cover">
+                <i class="fas fa-home"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-ellipsis-v custom-toggle-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#background">Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#methodology">Methodology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#project-progress">Project Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#footer">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container  vertical-center">
+          <p class="jumbotron-title">A Smart Email Client to Help User <br> Identify Malicious URLs</p>
+          <!-- <p class="lead" style="padding-bottom: 50px;">This is a smart email client to help user identify malicious urls.</p> -->
+          <a class="get-started-button" href="#background">
+            <i class="fas fa-angle-down fa-lg"></i>
+          </a>
+          <div>
+            <button onclick="location.href = 'login';" class="try-demo-button">Try Demo with Google Login</button>
+          </div>
+
+        </div>
+    </div>
+
+    <!-- Main Elements -->
+    <div class="container content" id="background">
+       <div class="row">
+           <div class="col-md-10 mx-auto">
+               <h1 class="text-uppercase" data-aos="fade-left">Background</h1>
+               <p class="lead text" data-aos="fade-right">
+                    With the popularity of the Internet, email has become a popular way for people to communicate.
+                    Some criminals begin to use email to cheat and attack email users include individuals and
+                    companies, by inserting malicious URLs (Malicious Uniform Resource Locators).
+                    
+                    In this project, we aim to build a smart, web-based email client which not only includes the basic
+                    functionalities of an email client but also has the ability to read through the contents of the emails
+                    and perform URLs detection based on machine learning technologies.
+                </p>
+           </div>
+       </div>
+    </div>
+
+    <div class="container content" id="methodology">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1 class="text-uppercase" data-aos="fade-right">Methodology</h1>
+                <p class="lead" data-aos="fade-left">
+                    <div style="display: flex; padding-bottom: 10px; align-items: center; justify-content: center;" data-aos="fade-left">
+                        <img src="./images/frontend-implementation.png" style="width: 50%; height: 50%; padding: 10px;">
+                        <div class="lead">
+                            The final product of the email client in this project is a lightweight, web-based application. 
+                            The system architecture for the email client is provided in the left figure. For more details, 
+                            please refer to the product plan document provided in Documentation.
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center;" data-aos="fade-left">
+                        <div class="lead">
+                            We will apply machine learning to classify whether the URLs in the email are malicious URLs or 
+                            benign URLs. The general process of malicious URL classification is shown in the right figure. For more details, 
+                            please refer to the project plan document provided in Documentation.
+                        </div>
+                        <img src="./images/backend-implementation.png" style="width: 50%; height: 50%; padding: 10px;">
+                    </div>
+
+                </p>
+            </div>
+        </div>
+     </div>
+
+     <div class="container content" id="project-progress">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1 class="text-uppercase" data-aos="fade-left">Project Progress</h1>
+                <table class="table table-hover "  data-aos="fade-right">
+                    <thead style="background-color: #505050; color: white;">
+                      <tr>
+                        <th scope="col" style="width: 120px">Time</th>
+                        <th scope="col">Scheduled Tasks</th>
+                        <th scope="col"style="width: 120px">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>2020, Sep</th>
+                            <td>
+                                <ul>
+                                    <li>Review on existing open-source email clients</li>
+                                    <li>Review on existing online URL checkers</li>
+                                    <li>Research on the options for system architecture</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Oct</th>
+                            <td>
+                                <ul>
+                                    <li>Define the system architecture for both front-end and back-end implementations</li>
+                                    <li>Further research and study on the defined system architecture</li>
+                                    <li>Set up and development environment correspondingly</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Nov</th>
+                            <td>
+                                <ul>
+                                    <li>Design and implement the UI for the email client</li>
+                                    <li>Design and implement the database for URLs dataset storing</li>
+                                    <li>Design and implement different machine learning models using different algorithm</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Dec</th>
+                            <td>
+                                <ul>
+                                    <li>Implement the basic functionalities of the email client</li>
+                                    <li>Test and compare machine learning models</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2021, Jan</th>
+                            <td>
+                                <ul>
+                                    <li>Test and refine on the preliminary product</li>
+                                    <li>Prepare and deliver the first presentation</li>
+                                    <li>Prepare and deliver the interim report</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Feb</th>
+                            <td>
+                                <ul>
+                                    <li>Improve the product based on the feedbacks got from supervisor</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Mar</th>
+                            <td>
+                                <ul>
+                                    <li>Integrate the email client and the malicious URLs detector</li>
+                                    <li>Further test and refine on the product</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-check-circle"></i> Done</td>
+                        </tr>
+                        <tr>
+                            <th>2020, Apr</th>
+                            <td>
+                                <ul>
+                                    <li>Prepare and deliver the final presentation</li>
+                                    <li>Prepare and deliver the final report</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-spinner"></i> In Progress</td>
+                        </tr>
+                        <tr>
+                            <th>2020, May</th>
+                            <td>
+                                <ul>
+                                    <li>Prepare for the project exhibition</li>
+                                </ul>
+                            </td>
+                            <td><i class="fas fa-times-circle"></i> Not Started Yet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </div>
+
+     <div class="container content" id="team">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1 class="text-uppercase" data-aos="fade-right">Team</h1>   
+                <div class="card-deck">
+                    <div class="card" data-aos="fade-up">
+                        <img src="./images/supervisor.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="cardHeader">Supervisor</p>
+                            <p class="cardContext">Dr. T.W. Chim</p>
+                            <p class="cardContext">BEng, M.Phil, PhD</p>
+                            <p class="cardContext">Lecturer</p>
+                            <p>
+                                <a href="mailto: twchim@cs.hku.hk" onclick="dummyClick()">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up">
+                        <img src="./images/second-examiner.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="cardHeader">Second Examiner</p>
+                            <p class="cardContext">Prof. S M Yiu</p>
+                            <p class="cardContext">BSc, MS, PhD</p>
+                            <p class="cardContext">Associate Head, Professor</p>
+                            <p>
+                                <a href="mailto: smyiu@cs.hku.hk" onclick="dummyClick()">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card"  data-aos="fade-down">
+                        <img src="./images/student1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="cardHeader">Member 1</p>
+                            <p class="cardContext">Wu Zekai</p>
+                            <p class="cardContext">BEng(CompSc)</p>
+                            <p class="cardContext">Student</p>
+                            <p>
+                                <a href="mailto: u3546858@connect.hku.hk">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card"  data-aos="fade-down">
+                        <img src="./images/student2.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="cardHeader">Member 2</p>
+                            <p class="cardContext">Yau Lai Shun </p>
+                            <p class="cardContext">BEng(CompSc)</p>
+                            <p class="cardContext">Student</p>
+                            <p>
+                                <a href="mailto: yauls@connect.hku.hk">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container footer-element">
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-sm">
+                    <h3 class="text-uppercase">Documentation</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="javascript:void(0)" onclick="dummyClick()">Intermediate Report</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="dummyClick()">Final Report</a>
+                        </li>
+                        <li>
+                            <a href="docs/project-plan.pdf">Project Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <h3 class="text-uppercase">Contact Us</h3>
+                    <a href="mailto: u3546858@connect.hku.hk, yauls@connect.hku.hk">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="javascript:void(0)" onclick="dummyClick()">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="javascript:void(0)" onclick="dummyClick()">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="javascript:void(0)" onclick="dummyClick()">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>  
+            </div>
+            <hr style="background-color: white;">
+            <div class="row">
+                <p class="footer-copyright">Copyright © COMP4801 FYP20054 All rights reserved 2020.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div></div>
+
+    <script>
+        $(window).on('load', function() {
+            setTimeout(removeLoader, 1500);
+        });
+        AOS.init();       
+    </script>
+
+</body>
+</html>

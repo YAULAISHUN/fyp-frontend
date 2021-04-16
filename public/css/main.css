@@ -1,0 +1,37 @@
+/*CSS styles for main elements*/
+.content {
+    padding-top: 90px;
+  }
+
+.content .text-uppercase {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 12px;
+} 
+  
+/*CSS styles for card*/
+.card-img-top {
+    width: 60%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.cardHeader {
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+.cardContext {
+    font-size: 87%;
+    margin: 0px;
+}
+
+#team i {
+  color: #303030;
+}
+
+.card-img-top {
+  border-radius: 50%;
+}
