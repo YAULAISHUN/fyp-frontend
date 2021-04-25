@@ -57,7 +57,7 @@ export default function Email(props) {
     useEffect(() => {
         setTimeout(function () {
             ReactTooltip.rebuild();
-        }, 1000);
+        }, 2000);
     }, [urlDetection])
 
     return (

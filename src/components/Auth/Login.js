@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Alert from '@material-ui/lab/Alert';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -54,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: 'center',
     },
     paper: {
-        margin: theme.spacing(8, 4),
+        margin: theme.spacing(5, 4, 2, 4),
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -172,6 +174,20 @@ export default function SignInSide() {
                                                 </Link>
                                             </Grid>
                                         </Grid>
+                                        
+                                        <Box mt={5}>
+                                            <Alert severity="info">
+                                                Since the application have not been verified by Google. Inc and hence, we suggest you to use the following demo Google account for security reason.
+                                                <br></br>
+                                                <p>
+                                                    - Account: fyp20054@gmail.com
+                                                    <br/>
+                                                    - Password: fyp123456
+                                                </p>
+                                                <p></p>
+                                                
+                                            </Alert>
+                                        </Box>
                                         <Box mt={5}>
                                             <Copyright />
                                         </Box>
