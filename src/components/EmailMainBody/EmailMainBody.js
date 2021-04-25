@@ -21,6 +21,15 @@ import gmailApi from "../../controllers/GmailAPI/GmailAPI";
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+const inboxArray1 = Array(12).fill(
+    {
+        from: 'From: FYP 20054',
+        subject: 'Hello, We\'re FYP20054!',
+        snippet: 'This is a sample email for showcasing the UI only! This is a sample email for showcasing the UI only! This is a sample email for showcasing the UI only! This is a sample email for showcasing the UI only! This is a sample email for showcasing the UI only!',
+        checked: false
+    }
+);
+
 const useStyles = makeStyles((theme) => ({
     root: {
         // display: 'flex',

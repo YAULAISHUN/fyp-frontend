@@ -100,7 +100,7 @@ export default function EmailList(props) {
                                             "To:\t" + email['to'].split("<")[0].replace(/['"]+/g, '')
                                         ):
                                         (
-                                            email['from'].split("<")[0].replace(/['"]+/g, '')
+                                            email['from'] ? email['from'].split("<")[0].replace(/['"]+/g, '') : ""
                                         )
                                         }
                                         

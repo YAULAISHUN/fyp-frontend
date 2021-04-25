@@ -67,10 +67,10 @@ export default function Email(props) {
                     <AccountCircleIcon style={{ fontSize: 40, paddingTop: "100" }} color="action" />
                 </Grid>
                 <Grid item xs={9}>
-                    <Grid container spacing={0}>
+                    <Grid container spacing={0} alignItems="center">
                         <Grid item xs={11}>
                             <Grid container justify="flex-start" alignItems="center">
-                                <p style={{ fontSize: "140%", margin: "1rem 0rem" }}>
+                                <p style={{ fontSize: "140%", margin: "1rem 0rem", textAlign: "left" }}>
                                     <strong>
                                         {email.subject}
                                     </strong>
@@ -90,8 +90,6 @@ export default function Email(props) {
                                 }
                             </Grid>
                         </Grid>
-
-
                     </Grid>
                     <Grid style={{ paddingBottom: "20px" }}>
                         <Divider />
@@ -100,10 +98,10 @@ export default function Email(props) {
                         <Grid container justify="flex-start" item xs={6}>
                             <p style={{ fontSize: "90%", display: "flex" }} >
                                 <strong>
-                                    {email['from'].split("<")[0].replace(/['"]+/g, '')}
+                                    {(email['from'] ? email['from'].split("<")[0].replace(/['"]+/g, '') : "")}
                                 </strong>
                                 <div style={{ fontSize: "80%", color: "grey" }}>
-                                    {"<" + email['from'].split("<")[1]}
+                                    {"<" + (email['from'] ? email['from'].split("<")[1] : "")}
                                 </div>
                             </p>
                         </Grid>
